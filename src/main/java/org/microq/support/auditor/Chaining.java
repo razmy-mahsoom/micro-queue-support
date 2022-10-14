@@ -1,6 +1,7 @@
 package org.microq.support.auditor;
 
 import lombok.Data;
+import lombok.ToString;
 import org.microq.support.annotations.ClientType;
 
 import java.io.Serializable;
