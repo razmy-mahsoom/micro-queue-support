@@ -3,13 +3,14 @@ package org.microq.support.auditor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-@NoArgsConstructor
+
 @Data
-public abstract class Sequence {
+@NoArgsConstructor
+public  class Sequence extends AbstractDeclarable{
 
-    protected abstract String sequenceName();
+    private String sequenceName;
 
-    public String getSequenceName(){
-        return sequenceName();
+    public Sequence(String sequenceName) {
+        this.sequenceName = sequenceName;
     }
 }

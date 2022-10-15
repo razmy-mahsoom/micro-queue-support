@@ -4,13 +4,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@NoArgsConstructor
 @Data
-public abstract class Interchange {
+@NoArgsConstructor
+public class Interchange extends AbstractDeclarable {
 
-    protected abstract String interchangeName();
+    private String interchangeName;
 
-    public String getInterchangeName(){
-        return interchangeName();
+    public Interchange(String interchangeName) {
+        this.interchangeName = interchangeName;
     }
 }

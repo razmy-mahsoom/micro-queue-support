@@ -7,7 +7,7 @@ import org.microq.support.annotations.ClientType;
 import java.io.Serializable;
 
 @Data
-public class Chaining implements Serializable {
+public class Chaining extends AbstractDeclarable implements Serializable {
 
     private Interchange interchange;
     private Sequence sequence;
